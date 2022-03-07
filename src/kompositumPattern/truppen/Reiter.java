@@ -10,7 +10,7 @@ public class Reiter extends Truppeninterface {
 
   @Override
   public int angreiffen() {
-    // TODO Auto-generated method stub
+    System.out.println("Reiter greift mit der Schleuder an. Verursacht 1 Schaden.");
     return 1;
   }
   

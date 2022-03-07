@@ -14,7 +14,13 @@ public class Offizier extends Truppeninterface implements KompositumInterface {
 
   @Override
   public int angreiffen() {
-    return 3;
+    System.out.println("Offizier greift mit dem Schwert an. Verursacht 3 Schaden.");
+
+    int schaden = 3; // Grundschaden des Offiziers
+    for (Truppeninterface truppe : truppen) {
+      schaden += truppe.angreiffen();
+    }
+    return schaden;
   }
 
   @Override

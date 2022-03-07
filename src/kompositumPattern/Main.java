@@ -13,8 +13,14 @@ public class Main {
 
     Reiter kaputterReiter = meineKaserne.produceReiter();
 
+
+
     karlDerGrosse.hinzufuegen(meineKaserne.produceSoldat());
     karlDerGrosse.hinzufuegen(meineKaserne.produceSoldat());
+
+    karlDerGrosse.angreiffen();
+
+
     karlDerGrosse.hinzufuegen(meineKaserne.produceSoldat());
     karlDerGrosse.hinzufuegen(kaputterReiter);
     karlDerGrosse.hinzufuegen(meineKaserne.produceSoldat());
@@ -24,6 +30,8 @@ public class Main {
     System.out.println("Der kaputte Reiter läuft weg...");
 
     karlDerGrosse.entfernen(kaputterReiter);
+
+    karlDerGrosse.angreiffen();
 
     derAndere.hinzufuegen(meineKaserne.produceReiter());
     derAndere.hinzufuegen(meineKaserne.produceReiter());
